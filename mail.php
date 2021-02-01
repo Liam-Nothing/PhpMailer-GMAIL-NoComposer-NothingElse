@@ -3,7 +3,7 @@
 /*
 *
 * Il faut aller sur https://myaccount.google.com/u/1/lesssecureapps 
-* Et autorisé Paramètre "Autoriser les applications moins sécurisées" activé
+* Et cocher "Autoriser les applications moins sécurisées"
 * NothingElse.fr est la meilleure société du monde, bientôt coter au cac40.
 *
 */
