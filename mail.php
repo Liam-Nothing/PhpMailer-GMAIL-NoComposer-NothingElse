@@ -52,7 +52,13 @@ $mail->AltBody = 'HTML messaging not supported';
 if(!$mail->send()){
     // echo "Mailer Error: " . $mail->ErrorInfo;
 	header('Location: '.$urlError);
+	$handle = fopen("ne_mail_log.txt", "a");
+	fwrite($handle, $emailTo." : ".date('l jS \of F Y h:i:s A')." : Ok\n");
+	fclose($handle);
 }else{
     // echo "Message sent!";
 	header('Location: '.$urlSuccess);
+	$handle = fopen("ne_mail_log.txt", "a");
+	fwrite($handle, $emailTo." : ".date('l jS \of F Y h:i:s A')." : Error\n");
+	fclose($handle);
 }
